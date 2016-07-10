@@ -108,7 +108,52 @@ router.get('/projects/:id', (req, res) => {
 // SKILLS
 router.get('/skills', (req, res) => {
   res.status(200).json({
-    skills: [{name: 'name', proficiency: 2}]
+    skills: [
+      {
+        name: 'autodesk autoCAD',
+        proficiency: 9
+      },
+      {
+        name: 'rhino',
+        proficiency: 8
+      },
+      {
+        name: 'sketchup',
+        proficiency: 8
+      },
+      {
+        name: 'adobe photoshop',
+        proficiency: 8
+      },
+      {
+        name: 'adobe illustrator',
+        proficiency: 8
+      },
+      {
+        name: 'adobe inDesign',
+        proficiency: 9
+      },
+      {
+        name: 'html/css',
+        proficiency: 8
+      },
+      {
+        name: 'git',
+        proficiency: 7
+      },
+      {
+        name: 'javascript',
+        proficiency: 6
+      },
+      {
+        name: 'ruby/rails',
+        proficiency: 5
+      },
+      {
+        name: 'node/express',
+        proficiency: 3
+      }
+    ]
   })
 })
 

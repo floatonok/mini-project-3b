@@ -15,7 +15,18 @@ app.use(bodyParser.urlencoded({
   extended: true
 }))
 
+const mongoose = require('mongoose')
+mongoose.connect(process.env.MONGODB_URI)
+
 app.use('/api/', router)
+
+app.use((err, req, res, next) => {
+  res.status(err.status || 500)
+  res.json({
+    message: err.message,
+    error: err
+  })
+})
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`)

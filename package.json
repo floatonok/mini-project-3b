@@ -7,7 +7,8 @@
     "start": "source .env; node app.js",
     "dev": "nodemon app.js",
     "cover": "istanbul cover _mocha",
-    "test": "mocha"
+    "test": "mocha",
+    "seed": "source .env; node models/seed.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,8 @@
     "ejs": "^2.4.2",
     "express": "^4.14.0",
     "mocha": "^2.5.3",
+    "mongoose": "^4.5.4",
+    "mongoose-seed": "^0.2.0",
     "morgan": "^1.7.0"
   },
   "engines": {

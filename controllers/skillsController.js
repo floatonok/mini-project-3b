@@ -3,7 +3,7 @@ const Skill = require('../models/skill')
 function getAll (req, res, next) {
   Skill.find({}, (err, skills) => {
     if (err) return next(err)
-    res.status(200).json(skills)
+    res.status(200).json({skills: skills})
   })
 }
 

@@ -3,7 +3,7 @@ const Education = require('../models/education')
 function getAll (req, res, next) {
   Education.find({}, (err, educations) => {
     if (err) return next(err)
-    res.status(200).json(educations)
+    res.status(200).json({educations: educations})
   })
 }
 
@@ -22,7 +22,7 @@ function createEducation (req, res, next) {
 function getEducation (req, res, next) {
   Education.findById({_id: req.params.id}, (err, education) => {
     if (err) return next(err)
-    res.status(200).json(education)
+    res.status(200).json({education: education})
   })
 }
 

@@ -7,7 +7,7 @@
     "start": "source .env; node app.js",
     "dev": "nodemon app.js",
     "cover": "istanbul cover _mocha",
-    "test": "mocha",
+    "test": "source .env; mocha",
     "seed": "source .env; node models/seed.js"
   },
   "repository": {

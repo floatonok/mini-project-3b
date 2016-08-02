@@ -89,13 +89,13 @@ describe('GET /projects', () => {
 // Test for PROJECTS/:ID path
 describe('GET /projects/:id', () => {
   it('should return a 200 response', (done) => {
-    api.get('/api/projects/1')
+    api.get('/api/projects/579ec1a51edb6e5704c1dd62')
     .set('Accept', 'application/json')
     .expect(200, done)
   })
 
   it('should return the full details of a specific projects: name, github & heroku links, images etc', (done) => {
-    api.get('/api/projects/1')
+    api.get('/api/projects/579ec1a51edb6e5704c1dd62')
     .set('Accept', 'application/json')
     .end((err, res) => {
       expect(err).to.be.a('null')
@@ -137,7 +137,7 @@ describe('GET /skills', () => {
     .set('Accept', 'application/json')
     .end((err, res) => {
       expect(err).to.be.a('null')
-      expect(res.body.skills[0]).to.have.property('name')
+      expect(res.body.skills[0]).to.have.property('skill')
       expect(res.body.skills[0]).to.have.property('proficiency')
       expect(res.body.skills[0].proficiency).to.be.a('number')
       done()
@@ -146,51 +146,40 @@ describe('GET /skills', () => {
 })
 
 // Test for EDUCATION path
-describe('GET /education', () => {
+describe('GET /educations', () => {
   it('should return a 200 response', (done) => {
-    api.get('/api/education')
+    api.get('/api/educations')
     .set('Accept', 'application/json')
     .expect(200, done)
   })
 
   it('should return a summary list of your education history', (done) => {
-    api.get('/api/education')
+    api.get('/api/educations')
     .set('Accept', 'application/json')
     .end((err, res) => {
       expect(err).to.be.a('null')
-      expect(res.body.education).to.be.an('array')
-      expect(res.body.education).to.not.be.empty
+      expect(res.body.educations).to.be.an('array')
+      expect(res.body.educations).to.not.be.empty
       done()
     })
   })
 })
 
 // Test for EDUCATION/:ID path
-describe('GET /education/:id', () => {
+describe('GET /educations/:id', () => {
   it('should return a 200 response', (done) => {
-    api.get('/api/education/1')
+    api.get('/api/educations/579ec1a51edb6e5704c1dd5c')
     .set('Accept', 'application/json')
     .expect(200, done)
   })
 
   it('should return information on education period', (done) => {
-    api.get('/api/education/1')
+    api.get('/api/educations/579ec1a51edb6e5704c1dd5c')
     .set('Accept', 'application/json')
     .end((err, res) => {
       expect(err).to.be.a('null')
-      expect(res.body).to.have.property('duration')
-      expect(res.body.duration).to.not.be.empty
-      done()
-    })
-  })
-
-  it('should return a list of achievements', (done) => {
-    api.get('/api/education/1')
-    .set('Accept', 'application/json')
-    .end((err, res) => {
-      expect(err).to.be.a('null')
-      expect(res.body).to.have.property('achievements')
-      expect(res.body.achievements).to.be.an('array')
+      expect(res.body.education).to.have.property('duration')
+      expect(res.body.education.duration).to.not.be.empty
       done()
     })
   })

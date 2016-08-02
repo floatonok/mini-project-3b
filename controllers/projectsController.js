@@ -23,10 +23,14 @@ function checkExistingSkills (skills, project, next, callback) {
 }
 
 function getAll (req, res, next) {
-  Project.find({}, (err, projects) => {
+  Project.find({}).populate('skills').exec((err, projects) => {
     if (err) return next(err)
-    res.status(200).json(projects)
+    res.status(200).json({projects: projects})
   })
+  // Project.find({}, (err, projects) => {
+  //   if (err) return next(err)
+  //   res.status(200).json({projects: projects})
+  // })
 }
 
 function createProject (req, res, next) {

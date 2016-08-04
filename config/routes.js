@@ -2,7 +2,9 @@ const express = require('express')
 const router = express.Router()
 const projectsController = require('../controllers/projectsController')
 const skillsController = require('../controllers/skillsController')
+// const archiSkillsController = require('../controllers/archiSkillsController')
 const educationsController = require('../controllers/educationsController')
+const achievementsController = require('../controllers/achievementsController')
 
 router.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*')
@@ -61,6 +63,16 @@ router.route('/skills/:id')
 .patch(skillsController.updateSkill)
 .delete(skillsController.deleteSkill)
 
+// ARCHI SKILLS
+// router.route('/archi_skills')
+// .get(archiSkillsController.getAll)
+// .post(archiSkillsController.createArchiSkill)
+
+// router.route('/archi_skills/:id')
+// .get(archiSkillsController.getArchiSkill)
+// .patch(archiSkillsController.updateArchiSkill)
+// .delete(archiSkillsController.deleteArchiSkill)
+
 // EDUCATION
 router.route('/educations')
 .get(educationsController.getAll)
@@ -70,5 +82,15 @@ router.route('/educations/:id')
 .get(educationsController.getEducation)
 .patch(educationsController.updateEducation)
 .delete(educationsController.deleteEducation)
+
+// ACHIEVEMENTS
+router.route('/achievements')
+.get(achievementsController.getAll)
+.post(achievementsController.createAchievement)
+
+router.route('/achievements/:id')
+.get(achievementsController.getAchievement)
+.patch(achievementsController.updateAchievement)
+.delete(achievementsController.deleteAchievement)
 
 module.exports = router

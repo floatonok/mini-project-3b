@@ -5,6 +5,7 @@ const projectSchema = new mongoose.Schema({
   description: String,
   links: Array,
   images: Array,
+  dataOrder: Number,
   skills: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Skill' }]
 })
 

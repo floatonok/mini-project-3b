@@ -10,6 +10,7 @@ function getAll (req, res, next) {
 function createSkill (req, res, next) {
   var skill = new Skill()
 
+  skill.category = req.body.category
   skill.skill = req.body.skill
   skill.proficiency = req.body.proficiency
 
@@ -29,6 +30,7 @@ function getSkill (req, res, next) {
 function updateSkill (req, res, next) {
   Skill.findById({_id: req.params.id}, (err, skill) => {
     if (err) return next(err)
+    if (req.body.category) skill.category = req.body.category
     if (req.body.skill) skill.skill = req.body.skill
     if (req.body.proficiency) skill.proficiency = req.body.proficiency
 

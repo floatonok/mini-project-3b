@@ -38,6 +38,7 @@ function createProject (req, res, next) {
 
   project.title = req.body.title
   project.description = req.body.description
+  project.dataOrder = req.body.dataOrder
   req.body.links.forEach((link) => {
     project.links.push(link)
   })
@@ -68,6 +69,7 @@ function updateProject (req, res, next) {
     checkExistingSkills(req.body.skills, project, next, function (project) {
       if (req.body.title) project.title = req.body.title
       if (req.body.description) project.description = req.body.description
+      if (req.body.dataOrder) project.dataOrder = req.body.dataOrder
       if (req.body.links) {
         project.links = []
         req.body.links.forEach((link) => {

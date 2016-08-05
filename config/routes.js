@@ -63,16 +63,6 @@ router.route('/skills/:id')
 .patch(skillsController.updateSkill)
 .delete(skillsController.deleteSkill)
 
-// ARCHI SKILLS
-// router.route('/archi_skills')
-// .get(archiSkillsController.getAll)
-// .post(archiSkillsController.createArchiSkill)
-
-// router.route('/archi_skills/:id')
-// .get(archiSkillsController.getArchiSkill)
-// .patch(archiSkillsController.updateArchiSkill)
-// .delete(archiSkillsController.deleteArchiSkill)
-
 // EDUCATION
 router.route('/educations')
 .get(educationsController.getAll)

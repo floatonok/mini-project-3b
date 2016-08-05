@@ -191,6 +191,8 @@ var data = [
     'documents': [
       {
         title: 'Biography',
+        category: 'webdev',
+        category: 'webdev',
         description: 'Mini Project 1: Designed a web biography on someone I respect.',
         links: ['http://floatonok.github.io/mini-project-1/'],
         dataOrder: 8,
@@ -199,6 +201,7 @@ var data = [
       },
       {
         title: 'Trivia Quiz',
+        category: 'webdev',
         description: 'Project 1A',
         links: ['http://floatonok.github.io/project1-quiz/'],
         dataOrder: 9,
@@ -207,6 +210,7 @@ var data = [
       },
       {
         title: 'Snake Game',
+        category: 'webdev',
         description: 'Project 1B',
         links: ['http://floatonok.github.io/project1-game/'],
         dataOrder: 3,
@@ -215,6 +219,7 @@ var data = [
       },
       {
         title: 'Sake Wiki Page',
+        category: 'webdev',
         description: 'Mini Project 2',
         links: ['https://dry-mountain-34654.herokuapp.com/'],
         dataOrder: 4,
@@ -223,6 +228,7 @@ var data = [
       },
       {
         title: 'tl:dr',
+        category: 'webdev',
         description: 'Project 2A',
         links: ['https://mysterious-ridge-15778.herokuapp.com/'],
         dataOrder: 7,
@@ -231,6 +237,7 @@ var data = [
       },
       {
         title: 'Open-Source Collaboration Platform',
+        category: 'webdev',
         description: 'Project 2B',
         links: ['https://protected-tor-48809.herokuapp.com/'],
         dataOrder: 5,
@@ -239,6 +246,7 @@ var data = [
       },
       {
         title: 'Natural Event Mapper',
+        category: 'webdev',
         description: 'Mini Project 3A',
         links: ['https://floatonok.github.io/mini-project-3a/'],
         dataOrder: 6,
@@ -247,6 +255,7 @@ var data = [
       },
       {
         title: 'api dot me / portfolio',
+        category: 'webdev',
         description: 'Mini Project 3B',
         links: [],
         dataOrder: 1,
@@ -255,9 +264,37 @@ var data = [
       },
       {
         title: 'Readr',
+        category: 'webdev',
         description: 'Project 3',
         links: ['https://flight846.github.io/readr-client/'],
         dataOrder: 2,
+        images: ['IMAGE HERE']
+      // skills: [Skill.findOne({skill: 'HTML'}), Skill.findOne({skill: 'CSS'}), Skill.findOne({skill: 'Bootstrap'}), Skill.findOne({skill: 'ExpressJS'}), Skill.findOne({skill: 'JQuery'})]
+      },
+      {
+        title: 'Big Data as a Lover',
+        category: 'archi',
+        description: 'Bee Breeders London Internet Museum (Honorable Mention)',
+        links: ['https://flight846.github.io/readr-client/'],
+        dataOrder: 10,
+        images: ['IMAGE HERE']
+      // skills: [Skill.findOne({skill: 'HTML'}), Skill.findOne({skill: 'CSS'}), Skill.findOne({skill: 'Bootstrap'}), Skill.findOne({skill: 'ExpressJS'}), Skill.findOne({skill: 'JQuery'})]
+      },
+      {
+        title: 'The Collab-oratory',
+        category: 'archi',
+        description: 'Vertical Cities Asia Compeition 2015 (Honorable Mention)',
+        links: ['https://flight846.github.io/readr-client/'],
+        dataOrder: 10,
+        images: ['IMAGE HERE']
+      // skills: [Skill.findOne({skill: 'HTML'}), Skill.findOne({skill: 'CSS'}), Skill.findOne({skill: 'Bootstrap'}), Skill.findOne({skill: 'ExpressJS'}), Skill.findOne({skill: 'JQuery'})]
+      },
+      {
+        title: 'Walled Campus',
+        category: 'archi',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        links: ['https://flight846.github.io/readr-client/'],
+        dataOrder: 10,
         images: ['IMAGE HERE']
       // skills: [Skill.findOne({skill: 'HTML'}), Skill.findOne({skill: 'CSS'}), Skill.findOne({skill: 'Bootstrap'}), Skill.findOne({skill: 'ExpressJS'}), Skill.findOne({skill: 'JQuery'})]
       }

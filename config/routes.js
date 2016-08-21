@@ -30,7 +30,7 @@ router.get('/profiles', (req, res) => {
     _id: 1,
     name: 'Isabella Ong Zhixu',
     industry: 'Architecture/Web Development',
-    currently: 'Studying at General Assembly',
+    currently: 'Coder / architecture student. Fascinated with big ideas, loves making things, and believes in always challenging the status quo.',
     education: 'NUS Bacholar of Arts(Architecture)',
     profile_image: 'https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/e15/11024099_436185319871110_1638537240_n.jpg?ig_cache_key=OTM1MzY2NTI1ODUwMjMzODI1.2'
   }

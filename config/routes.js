@@ -39,9 +39,28 @@ router.get('/profiles', (req, res) => {
 
 // LINKS
 router.get('/links', (req, res) => {
-  res.status(200).json({
-    links: ['https://github.com/floatonok']
-  })
+  res.status(200).json({links: [
+    {
+      website: 'github',
+      'url': 'https://github.com/floatonok',
+      'icon': 'icons/github.svg'
+    },
+    {
+      website: 'facebook',
+      'url': 'https://www.facebook.com/floatonok',
+      'icon': 'icons/facebook.svg'
+    },
+    {
+      website: 'instagram',
+      'url': 'https://www.instagram.com/floatono.k',
+      'icon': 'icons/instagram.svg'
+    },
+    {
+      website: 'linkedin',
+      'url': 'https://www.linkedin.com/in/isabellaongzhixu',
+      'icon': 'icons/linkedin.svg'
+    }
+  ]})
 })
 
 // PROJECTS

@@ -195,7 +195,7 @@ var data = [
         header: 'A twist on the classic game of Snake, and some dope beats from a friend who spins.',
         description: 'Drawing inspiration from snake games like <em>Curvatron</em>, I wanted to build a minimalist game design for snake with geometrical obstacles that the player can activate. As this game was designed for web browsers, the player has the vast landscape of the browser to manoeuvre around to get the apples, so the fun starts when the obstacles are activated. For every obstacle level activated, a sound loop will be layered.<br><br>Built with HTML Canvas, Javascript, HTML/CSS. Sounds provided by <a href=”https://soundcloud.com/7incey”>DJ Lincey</a>.',
         links: ['http://floatonok.github.io/project1-game/', 'https://github.com/floatonok/project1-game'],
-        images: ['projects/snake.gif']
+        images: ['https://github.com/floatonok/portfolio/blob/master/public/projects/snake.gif?raw=true']
         // dataOrder: 3,
         // skills: [Skill.findOne({skill: 'HTML'}), Skill.findOne({skill: 'CSS'}), Skill.findOne({skill: 'Canvas'}), Skill.findOne({skill: 'Javascript'}), Skill.findOne({skill: 'JQuery'})]
       },
@@ -235,7 +235,7 @@ var data = [
         header: 'Behance X Github. A collaboration platform for designers to create open-source projects for others to join in.',
         description: 'Designers are jumping onto the open-source bandwagon, but there are not many open-source platforms for them to do so. The Co-Lab allows users to create project that lets other users to join in and collaborate. Every project page is like a room where collaborators can discuss and upload raw, work-in-progress images, which other users can download and work on. Users can send messages to others to find like-minded people to work on new projects together.<br><br>Built on Ruby on Rails, with the <a href=” https://github.com/mailboxer/mailboxer”>Mailboxer gem</a>',
         links: ['https://protected-tor-48809.herokuapp.com/', 'https://github.com/floatonok/common-ground'],
-        images: ['projects/collab.gif']
+        images: ['https://github.com/floatonok/portfolio/blob/master/public/projects/collab.gif?raw=true']
         // dataOrder: 5,
         // skills: [Skill.findOne({skill: 'HTML'}), Skill.findOne({skill: 'CSS'}), Skill.findOne({skill: 'Ruby on Rails'}), Skill.findOne({skill: 'Bootstrap'})]
       },
@@ -245,7 +245,7 @@ var data = [
         header: 'A biography on the radical, Italian architecture group, SUPERSTUDIO.',
         description: 'First project as a General Assembly student. We were tasked to design an online biography on someone we admire, and so I did mine on SUPERSTUDIO ‘cause they are really cool and forward-thinking for their time.<br><br>Built with HTML, CSS and lots of flexbox-ing.',
         links: ['http://floatonok.github.io/mini-project-1/', 'https://github.com/floatonok/mini-project-1'],
-        images: ['projects/biography.gif']
+        images: ['https://github.com/floatonok/portfolio/blob/master/public/projects/biography.gif?raw=true']
         // dataOrder: 8,
         // skills: [Skill.findOne({skill: 'HTML'}), Skill.findOne({skill: 'CSS'})]
       },
@@ -255,7 +255,7 @@ var data = [
         header: 'A front-end project that consumes NASA’s EONET API to map out natural events occurring around the world.',
         description: 'A simple front-end project to consume NASA’s Earth Observatory Natural Event Tracker <a href="http://eonet.sci.gsfc.nasa.gov/api/v2.1/events">(EONET) API</a>. The map was done using <em>mapbox</em> which maps out events based on the geoJSON coordinates called from the external API. My first foray into the world of APIs and I am never looking back.<br><br>Built using AJAX and JQuery.',
         links: ['https://floatonok.github.io/mini-project-3a/', 'https://github.com/floatonok/mini-project-3a'],
-        images: ['projects/mapper.gif']
+        images: ['https://github.com/floatonok/portfolio/blob/master/public/projects/mapper.gif?raw=true']
         // dataOrder: 6,
         // skills: [Skill.findOne({skill: 'HTML'}), Skill.findOne({skill: 'CSS'}), Skill.findOne({skill: 'Bootstrap'}), Skill.findOne({skill: 'ExpressJS'}), Skill.findOne({skill: 'JQuery'})]
       },
@@ -265,7 +265,7 @@ var data = [
         header: 'Sake is good for your body and soul. Which is why I created a wiki to educate the people on the goodness of sake.',
         description: 'A project to help us be more familiar with Ruby on Rails, user authentication and the concept of CRUD. It was also my first attempt to use bootstrap, and the start of a beautiful friendship with it.',
         links: ['https://dry-mountain-34654.herokuapp.com/'],
-        images: ['projects/sake.gif']
+        images: ['https://github.com/floatonok/portfolio/blob/master/public/projects/sake.gif?raw=true']
         // dataOrder: 4,
         // skills: [Skill.findOne({skill: 'HTML'}), Skill.findOne({skill: 'CSS'}), Skill.findOne({skill: 'Ruby on Rails'}), Skill.findOne({skill: 'Bootstrap'})]
       },
@@ -275,7 +275,7 @@ var data = [
         header: 'Read TL;DRs first before committing to the whole article. Because life is too short to waste on bad articles.',
         description: 'As a web user who is constantly being bombarded with clickbait articles and often regretting the minutes wasted reading terrible articles, I have made it my lifelong mission to make it mandatory to have honest and truthful summaries of every online article for people to read before committing that 7 minutes to reading it. And hence this project.<br><br>Built using Ruby on Rails.',
         links: ['https://mysterious-ridge-15778.herokuapp.com/', 'https://github.com/floatonok/tl-dr'],
-        images: ['projects/tldr.gif']
+        images: ['https://github.com/floatonok/portfolio/blob/master/public/projects/tldr.gif?raw=true']
         // dataOrder: 7,
         // skills: [Skill.findOne({skill: 'HTML'}), Skill.findOne({skill: 'CSS'}), Skill.findOne({skill: 'Ruby on Rails'}), Skill.findOne({skill: 'Bootstrap'})]
       },
@@ -285,7 +285,7 @@ var data = [
         header: 'Get your trivia game on.',
         description: 'A simple quiz built using HTML, CSS and Javascript where players take turn to answer true or false to trivia questions. Best out of ten wins. Yay.',
         links: ['http://floatonok.github.io/project1-quiz/', 'https://github.com/floatonok/project1-quiz'],
-        images: ['projects/quiz.gif']
+        images: ['https://github.com/floatonok/portfolio/blob/master/public/projects/quiz.gif?raw=true']
         // dataOrder: 9,
         // skills: [Skill.findOne({skill: 'HTML'}), Skill.findOne({skill: 'CSS'}), Skill.findOne({skill: 'Javascript'})]
       },
